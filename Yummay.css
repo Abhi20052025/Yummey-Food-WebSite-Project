@@ -1,0 +1,829 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff8f0;
+  padding: 15px;
+}
+ul{
+  list-style: none;
+
+}
+li{
+  float: left;
+}
+a:hover {
+  background-color: yellow;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff6347;
+}
+
+.Yummey1 {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.Yummey1 li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500px;
+  font-size: 30px;
+}
+
+.Book {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 25px;
+}
+
+/* Two-Container Layout */
+#parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: antiquewhite;
+}
+
+.left-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.left-content h2 {
+  font-size: 50px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.left-content p {
+  font-size: 25px;
+  color: #666;
+  line-height: 1.6;
+  margin-left: 10px;
+}
+
+.Book1 {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 25px;
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right-content img {
+  max-width: 100%;
+  height: 500px;
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+/* Animation keyframes */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* FontAwesome icon size & color */
+.contact-icon {
+  color: #ff6347;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+/* About Section Heading */
+#home {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.home1 {
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Cursive', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Layout container */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* About Image */
+.about-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Text area */
+.line {
+  flex: 1;
+  min-width: 300px;
+}
+
+.read p {
+  color: darkgray;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.right-tick p {
+  display: flex;
+  align-items: flex-start;
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.sub-paragraph {
+  font-size: 16px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Video Section */
+.vedio {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Booking Box */
+.box {
+  border: 10px solid #333;
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.box p {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.box h1 {
+  font-size: 40px;
+  color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .home1 {
+    font-size: 32px;
+  }
+
+  .read p {
+    font-size: 18px;
+  }
+
+  .right-tick p {
+    font-size: 16px;
+  }
+
+  .vedio iframe {
+    height: 200px;
+  }
+
+  .box p {
+    font-size: 24px;
+  }
+
+  .box h1 {
+    font-size: 32px;
+  }
+}
+.about-img {
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+
+.about-img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/*Menu section*/
+#menu{
+  margin-top: 100px;
+  text-align: center;
+  pre{
+    margin-top: 50px;
+    font-size: 80px;
+    text-align: center;
+  }
+}
+.food{
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+.starters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 50px;
+  gap: 80px;
+}
+h1{
+  padding: 5px;
+}
+h3{
+  font-size: 50px;
+  padding-left: 50px;
+  color: blue;
+}
+.starters1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 50px;
+  gap: 80px;
+}
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.starters, .starters1 {
+  animation: fadeSlideUp 2s ease forwards; /* run animation once */
+  opacity: 0; /* start hidden */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* for hover */
+}
+
+.starters:hover, .starters1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+
+/* Callery page*/
+#topgallery{
+  text-align: center;
+  margin-top: 50px;
+  font-style:italic;
+}
+.gallery1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.gallery1 img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+}
+.gallery1 img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  animation: slowZoom 8s ease-in-out infinite; /* continuous slow zoom */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover transition */
+}
+
+.gallery1 img:hover {
+  transform: scale(1.15); /* zoom more on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* add subtle shadow */
+  cursor: pointer;
+  animation-play-state: paused; /* pause slowZoom animation on hover */
+}
+
+/*Event image*/
+#event{
+  margin-top: 200px;
+  text-align: center;
+  font-size: 150px;
+  color: aquamarine;
+  font-style: italic;
+  background-color: antiquewhite;
+}
+.event1{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 20px;
+}
+.img{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.img img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  border-radius: 20px; /* match .event1 border-radius */
+}
+
+.img img:hover {
+  transform: scale(1.1); /* zoom in */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* subtle shadow */
+}
+
+/*Contact image*/
+#contact {
+  text-align: center;        
+  margin: 50px auto;         
+  padding: 20px;
+}
+
+/* Heading styling */
+#contact h1 {
+  font-size: 60px;            
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Subheading / Preformatted text styling */
+#contact pre {
+  font-size: 28px;           
+  font-family: inherit;      
+  color: #555;
+  margin: 0;
+  white-space: pre-wrap;      
+}
+
+/* Wrapper for centering content */
+.contact-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+.map iframe {
+  width: 100%;
+  max-width: 1000px;
+  height: 600px;
+  border: 0;
+  margin: 0 auto;
+  display: block;
+}
+.detail, .detail1, .send {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centering horizontally */
+  align-items: flex-start;
+  gap: 40px;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+.send {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* Contact Icons Style */
+.contact-icon {
+  font-size: 40px;
+  color: hwb(9 28% 0%); /* Tomato color */
+  text-align: center;
+  margin-top: 10px;
+}
+/* General container centering */
+.detail, .detail1 {
+  display: flex;
+  justify-content: center;     /* Center horizontally */
+  flex-wrap: wrap;             /* Wrap items on small screens */
+  gap: 40px;
+  margin: 30px auto;
+  max-width: 1000px;           /* Prevent stretching too wide */
+}
+
+/* Icon and text pair styling */
+.address, .num, .mail, .timer {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 45%;                  /* Two items per row on large screens */
+  min-width: 300px;
+}
+
+/* Icon styling */
+.contact-icon {
+  font-size: 40px;
+  color: #ff6347;
+  margin-top: 5px;
+}
+
+/* Text styling */
+.address h4, .num h4, .mail h4, .timer h4 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.address p, .num p, .mail p, .timer p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .detail, .detail1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .address, .num, .mail, .timer {
+    width: 90%;
+    justify-content: flex-start;
+  }
+
+  .contact-icon {
+    font-size: 36px;
+  }
+
+  .address h4, .num h4, .mail h4, .timer h4 {
+    font-size: 20px;
+  }
+
+  .address p, .num p, .mail p, .timer p {
+    font-size: 15px;
+  }
+}
+
+/* Input styling */
+.send input {
+  width: 48%;
+  padding: 15px;
+  margin: 10px 1%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mess {
+  width: 98%;
+  height: 120px;
+}
+
+.me {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.me:hover {
+  background-color: #e5533d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .detail, .detail1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .address, .num, .mail, .timer {
+    width: 100%;
+  }
+
+  .send input, .mess {
+    width: 100%;
+  }
+}
+
+/*footer*/
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+}
+
+/* Common style for all icon sections */
+.place, .phone, .opend {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+/* Icon styles */
+.icon-style {
+  font-size: 40px; /* Increased size */
+  margin-right: 20px;
+  color: #ffcc00;  /* Yellow color for visibility, change as needed */
+}
+
+/* Text beside the icons */
+.text, .text1, .text2 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Follow Us Section */
+.icon {
+  margin-top: 30px;
+}
+
+.icon h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.log {
+  font-size: 30px;           /* Icon size increased */
+  margin-right: 15px;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.log:hover {
+  transform: scale(1.2);
+  color:footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+}
+
+/* Common style for all icon sections */
+.place, .phone, .opend {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+/* Icon styles */
+.icon-style {
+  font-size: 40px; /* Increased size */
+  margin-right: 20px;
+  color: #ffcc00;  /* Yellow color for visibility, change as needed */
+}
+
+/* Text beside the icons */
+.text, .text1, .text2 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Follow Us Section */
+.icon {
+  margin-top: 30px;
+}
+
+.icon h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.log {
+  font-size: 30px;           /* Icon size increased */
+  margin-right: 15px;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.log:hover {
+  transform: scale(1.2);
+  color: #ffcc00;
+}
+
+/* Footer bottom text */
+.by {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .place, .phone, .opend {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon {
+    text-align: center;
+  }
+
+  .log {
+    margin: 10px;
+  }
+}
+
+}
+
+/* Footer bottom text */
+.by {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .place, .phone, .opend {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon {
+    text-align: center;
+  }
+
+  .log {
+    margin: 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px–1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  .Yummey1 {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .left-content h2 {
+    font-size: 40px;
+  }
+
+  .left-content p {
+    font-size: 20px;
+  }
+
+  .Book, .Book1 {
+    font-size: 20px;
+  }
+
+  .read p {
+    font-size: 20px;
+  }
+
+  .vedio iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+  }
+
+  .gallery1 img {
+    max-width: 48%;
+    margin-bottom: 15px;
+  }
+
+  .detail, .detail1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .address, .num, .mail, .timer {
+    width: 90%;
+  }
+
+  .send {
+    width: 90%;
+  }
+
+  .change, .your, .Sub, .mess {
+    width: 100%;
+  }
+}
+
+.log {
+  font-size: 30px;
+  color: white;
+  margin: 0 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.log:hover {
+  transform: scale(1.2);
+  color: #ff6347; /* optional hover color */
+}
+
+
+/* Large devices (desktops and up) */
+@media (min-width: 1024px) {
+  /* Already covered by your main CSS — no changes needed unless specific fixes */
+}
+/* Smooth transition for hover */
+a, .Book, .Book1, .me, .change, .Sub {
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.Yummey1 li a:hover {
+  background-color: #ff6347;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* Hover effect for buttons */
+.Book:hover,
+.Book1:hover,
+.me:hover {
+  background-color: #e5533d;
+  transform: scale(1.05);
+}
+
+/* Input focus */
+.change:focus,
+.your:focus,
+.Sub:focus,
+.mess:focus {
+  outline: 2px solid #ff6347;
+  box-shadow: 0 0 10px #ff6347;
+}
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide In Animation */
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+.navbar {
+  animation: slideDown 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
