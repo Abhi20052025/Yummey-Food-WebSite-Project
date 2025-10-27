@@ -28,7 +28,7 @@ JavaScript (ES6) – For interactivity and DOM manipulation
 
 Clone or download the repository:
 
-git clone https://github.com/yourusername/yummy-food-website.git
+git clone https://github.com/Abhi20052025/Yummey-Food-WebSite-Project
 
 
 Open the index.html file in your browser
